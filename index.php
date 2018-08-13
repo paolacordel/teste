@@ -22,9 +22,15 @@ require_once("config.php");
 
 // echo $user;
 
+// $user = new Usuario();
+// $user->loadById(8);
+// $user->update("prof", "sdfsdf");
+
+// echo $user;
+
 $user = new Usuario();
-$user->loadById(8);
-$user->update("prof", "sdfsdf");
+$user->loadById(7);
+$user->delete();
 
 echo $user;
 ?>
