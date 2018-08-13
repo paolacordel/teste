@@ -12,7 +12,19 @@ require_once("config.php");
 // $search = Usuario::search("a");
 // echo json_encode($search);
 
+// $user = new Usuario();
+// $user->login("alfredo", "alf45");
+// echo $user;
+
+// $user = new Usuario("aluno", "$%^d");
+
+// $user->insert();
+
+// echo $user;
+
 $user = new Usuario();
-$user->login("alfredo", "alf45");
+$user->loadById(8);
+$user->update("prof", "sdfsdf");
+
 echo $user;
 ?>
